@@ -1,0 +1,90 @@
+/* Navbar Styles */
+nav {
+    background-color: #1e1e1e;
+    padding: 15px 20px;
+    border-bottom: 2px solid #333;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #333;
+  }
+  
+  nav ul li button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li button:hover {
+    background-color: #333;
+  }
+  
+  nav ul li button:active {
+    background-color: #282828;
+  }
+  a:hover {
+    color: #18cc18;
+  }
+
+  /* Estilos adicionales para pantallas móviles */
+.hamburger {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 60px; /* Ajustar según el alto del nav */
+    left: 0;
+    right: 0;
+    padding: 15px;
+    border-top: 2px solid #333;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,51 @@
+/* Profile Container */
+.profile-container {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Título del Perfil */
+  .profile-container h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Información del Perfil */
+  .profile-info {
+    display: grid;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  /* Cada item de información */
+  .profile-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .profile-item strong {
+    font-weight: bold;
+  }
+  
+  /* Botón de Cambiar Contraseña */
+  .change-password-btn {
+    background-color: #333;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .change-password-btn:hover {
+    background-color: #555;
+  }
+  
